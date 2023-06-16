@@ -1,0 +1,136 @@
+* {
+    box-sizing: border-box;
+}
+
+#header {
+    display: grid;
+    grid-template-columns: 15% 70% 15%;
+    grid-template-areas: ". mm .";
+}
+
+#menu-container {
+    grid-area: mm;
+    display: grid;
+    height: min-content;
+    grid-template-columns: 10% 15% 75%;
+    grid-template-areas: "l . m";
+}
+
+#logo {
+    grid-area: l;
+    overflow: hidden;
+}
+
+#logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.menu {
+    grid-area: m;
+    display: grid;
+    list-style: none;
+    grid-template-columns: repeat(7, auto);
+    grid-template-areas: "cc os ab bl je hp la";
+}
+
+.menu-item {
+    color: #fc94a8;
+    font-family: Montserrat, Sans-serif;
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 1em;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    letter-spacing: 1px;
+    vertical-align: middle;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    top: 75px;
+    background-color: white;
+    z-index: 9999;
+}
+
+.dropdown-menu-item {
+    color: #fc94a8;
+    font-family: Montserrat, Sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1em;
+    letter-spacing: 1px;
+    vertical-align: middle;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.dropdown-menu li {
+    margin: 20px;
+}
+
+#content-catalog {
+    grid-area: cc;
+}
+
+#our-solutions {
+    grid-area: os;
+}
+
+#about {
+    grid-area: ab;
+}
+
+#blog {
+    grid-area: bl;
+}
+
+#hiring-partners {
+    grid-area: hp;
+}
+
+#join-elevation {
+    grid-area: je;
+}
+
+#languages {
+    grid-area: la;
+}
+
+.space {
+    background-color: black;
+    height: 100px;
+}
+
+#main-content-container {
+    display: grid;
+    grid-template-columns: 15% 70% 15%;
+    background-color: #fc94a8;
+    grid-template-areas: ". sc .";
+    height: 250px;
+}
+
+#swap-container {
+    grid-area: sc;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    background-color: indigo;
+    grid-template-areas: "st sw";
+}
+
+#static-part {
+    grid-area: st;
+    background-color: darkred;
+}
+
+#swap-part {
+    grid-area: sw;
+    background-color: greenyellow;
+}
