@@ -105,37 +105,59 @@
 }
 
 .space {
-    background-color: black;
-    height: 100px;
+    height: 150px;
 }
 
 #main-content-container {
     display: grid;
-    grid-template-columns: 15% 70% 15%;
-    background-color: #fc94a8;
+    grid-template-columns: 25% 50% 25%;
     grid-template-areas: ". sc .";
-    height: 250px;
+    height: 400px;
 }
 
 #swap-container {
     grid-area: sc;
     display: grid;
     grid-template-columns: 50% 50%;
-    background-color: indigo;
     grid-template-areas: "st sw";
 }
 
 #static-part {
     grid-area: st;
-    background-color: darkred;
     font-family: Montserrat, Sans-serif;
     font-weight: bold;
-    line-height: 2em;
     letter-spacing: 1px;
-    padding: 5px;
+    max-height: 400px;
+    padding: 10px;
 }
 
 #swap-part {
     grid-area: sw;
     background-color: greenyellow;
+}
+
+#academy {
+    grid-area: ac;
+    font-size: 60px;
+    margin: 0;
+}
+
+#solve {
+    grid-area: so;
+    font-size: 25px;
+}
+
+#talkBtn {
+    grid-area: tb;
+    font-family: "Montserrat", Sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    background-color: #fc94a8;
+    border: none;
+    width: 150px;
+    height: 75px;
+    border-radius: 50px;
+    color: white;
+    padding: 10px;
 }
