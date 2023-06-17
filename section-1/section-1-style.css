@@ -108,7 +108,7 @@
     height: 150px;
 }
 
-#main-content-container {
+#section-1 {
     display: grid;
     grid-template-columns: 25% 50% 25%;
     grid-template-areas: ". sc .";
@@ -133,7 +133,50 @@
 
 #swap-part {
     grid-area: sw;
-    background-color: greenyellow;
+    background-color: #fdf6f8;
+}
+
+.slide {
+    font-family: Montserrat, Sans-serif;
+    display: grid;
+    grid-template-rows: repeat(2, auto);
+    grid-template-columns: repeat(2, auto);
+    grid-template-areas:
+            "quote quote"
+            "person pname";
+}
+
+.quote {
+    letter-spacing: 1px;
+    max-height: 400px;
+    padding: 30px;
+}
+
+.person {
+    margin-left: 30px;
+    grid-area: person;
+    display: grid;
+    overflow: hidden;
+    grid-template-areas: "pimg pinfo";
+}
+
+.person-image {
+    grid-area: pimg;
+}
+
+.person-name {
+    grid-area: pname;
+}
+
+.person img {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.person-name p {
+    font-weight: bold;
 }
 
 #academy {
@@ -161,3 +204,188 @@
     color: white;
     padding: 10px;
 }
+
+#partners-and-customers {
+    font-family: "Montserrat", Sans-serif;
+    text-align: center;
+    padding: 35px;
+    font-size: 10px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    display: grid;
+    grid-template-rows: repeat(4, auto);
+    grid-template-columns: repeat(5, auto);
+    grid-template-areas:
+            ". . prt . ."
+            ". . lr1 . ."
+            ". . lr2 . ."
+            ". . lr3 . .";
+}
+
+#partners {
+    grid-area: prt;
+}
+
+#label-row-1 {
+    grid-area: lr1;
+    display: grid;
+    overflow: hidden;
+    grid-template-columns: 20% repeat(9, auto) 20%;
+    grid-template-areas:
+            ". google wix monday facebook aws verbit auto1 apx mazars .";
+}
+
+#label-row-1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+#google {
+    grid-area: google;
+}
+
+#wix {
+    grid-area: wix;
+}
+
+#monday {
+    grid-area: monday;
+}
+
+#facebook {
+    grid-area: facebook;
+}
+
+#aws {
+    grid-area: aws;
+}
+
+#verbit {
+    grid-area: verbit;
+}
+
+#auto1 {
+    grid-area: auto1;
+}
+
+#apx {
+    grid-area: apx;
+}
+
+#mazars {
+    grid-area: mazars;
+}
+
+#label-row-2 {
+    grid-area: lr2;
+    display: grid;
+    overflow: hidden;
+    grid-template-columns: 20% repeat(9, auto) 20%;
+    grid-template-areas:
+            ". novartis merck ey marley-spoon hello-fresh basf jpmorgan bezeq iia .";
+}
+
+#label-row-2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+#novartis {
+    grid-area: novartis;
+}
+
+#merck {
+    grid-area: merck;
+}
+
+#ey {
+    grid-area: ey;
+}
+
+#marley-spoon {
+    grid-area: marley-spoon;
+}
+
+#hello-fresh {
+    grid-area: hello-fresh;
+}
+
+#basf {
+    grid-area: basf;
+}
+
+#jpmorgan {
+    grid-area: jpmorgan;
+}
+
+#bezeq {
+    grid-area: bezeq;
+}
+
+#iia {
+    grid-area: iia;
+}
+
+#label-row-3 {
+    grid-area: lr3;
+    display: grid;
+    overflow: hidden;
+    grid-template-columns: 20% repeat(9, auto) 20%;
+    grid-template-areas:
+            ". tasc saatchi ness joint leumi hapoalim macabi israel uae .";
+}
+
+#label-row-3 img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+#tasc {
+    grid-area: tasc;
+}
+
+#saatchi {
+    grid-area: saatchi;
+}
+
+#ness {
+    grid-area: ness;
+}
+
+#joint {
+    grid-area: joint;
+}
+
+#leumi {
+    grid-area: leumi;
+}
+
+#hapoalim {
+    grid-area: hapoalim;
+}
+
+#macabi {
+    grid-area: macabi;
+}
+
+#israel {
+    grid-area: israel;
+}
+
+#uae {
+    grid-area: uae;
+}
+
+#video-container {
+    background-color: #0f2441;
+    display: grid;
+    height: 400px;
+}
+
+#video {
+
+}
+
