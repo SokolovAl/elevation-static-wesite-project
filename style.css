@@ -1,3 +1,10 @@
+html,
+body {
+    background-color: #f3f7fb;
+    margin: 0;
+    padding: 0;
+}
+
 * {
     box-sizing: border-box;
 }
@@ -382,10 +389,114 @@
 #video-container {
     background-color: #0f2441;
     display: grid;
-    height: 400px;
+    grid-template-columns: 15% 70% 15% ;
+    grid-template-areas: ". video .";
+    height: 500px;
 }
 
 #video {
-
+    grid-area: video;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
+#information-section {
+    display: grid;
+    grid-template-columns: 30% 40% 30%;
+    grid-template-areas: ". eh .";
+}
+
+#enhance {
+    grid-area: eh;
+    text-align: center;
+    font-family: "Montserrat", Sans-serif;
+    font-weight: bold;
+}
+
+#enhance h1 {
+    font-size: 50px;
+}
+
+#enhance h3 {
+    font-size: 30px;
+    color: #fc94a8;
+}
+
+#carousel-container {
+    display: grid;
+    grid-template-columns: 20% repeat(3, 1fr) 20%;
+    grid-gap: 15px;
+    grid-template-areas: ". cs1 cs2 cs3 .";
+    height: 300px;
+}
+
+
+#c-s-1 {
+    grid-area: cs1;
+}
+
+#c-s-2 {
+    grid-area: cs2;
+}
+
+#c-s-3 {
+    grid-area: cs3;
+}
+
+.carousel-section {
+    background-color: white;
+    text-align: center;
+    font-family: "Montserrat", Sans-serif;
+}
+
+.c-s-img {
+    max-height: 65px;
+}
+
+.c-s-img img {
+    padding-top: 10px;
+    object-fit: cover;
+}
+
+#btn-section {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 20% repeat(4, auto) 20%;
+    grid-template-areas: ". vdc vrdc vdmc vtc .";
+}
+
+#view-data-catalog {
+    grid-area: vdc;
+    background-color: #0f213a;
+}
+
+#view-rd-catalog {
+    grid-area: vrdc;
+    background-color: #fd95a9;
+}
+
+#view-dmarketing-catalog {
+    grid-area: vdmc;
+    background-color: #247dfd;
+}
+
+#view-talent-catalog {
+    grid-area: vtc;
+    background-color: #a8b7d2;
+}
+
+.btn {
+    border: none;
+    height: 50px;
+    font-size: 20px;
+    text-align: center;
+    font-family: "Montserrat", Sans-serif;
+    font-weight: bold;
+    border-radius: 50px;
+}
+
+.btn a {
+    text-decoration: none;
+    color: white;
+}
