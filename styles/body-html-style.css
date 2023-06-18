@@ -1,0 +1,46 @@
+html,
+body {
+    margin: 0;
+    padding-top: 10px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.space {
+    height: 150px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-family: "Montserrat", Sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+div,
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: Montserrat, Sans-serif;
+    font-weight: bold;
+    letter-spacing: 1px;
+    line-height: 1em;
+}
+
+.button {
+    border: none;
+    height: 50px;
+    border-radius: 50px;
+    color: white;
+    padding: 10px;
+}
+
+.button:hover {
+    transform: scale(1.05);
+}
