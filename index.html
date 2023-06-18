@@ -1,6 +1,11 @@
 <!doctype html>
 <html lang="en" xmlns="">
 <head>
+    <link href="styles/body-html-style.css" rel="stylesheet" type="text/css">
+    <link href="styles/header-style.css" rel="stylesheet" type="text/css">
+    <link href="styles/section-1-style.css" rel="stylesheet" type="text/css">
+    <link href="styles/section-2-style.css" rel="stylesheet" type="text/css">
+    <link href="styles/section-3-style.css" rel="stylesheet" type="text/css">
     <link href="style.css" rel="stylesheet" type="text/css">
     <meta charset="UTF-8">
     <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" name="viewport">
@@ -8,82 +13,130 @@
     <title>Project Static Website</title>
 </head>
 <body>
-    <div id="header">
-        <div id="menu-container">
-            <a href="https://elevation.ac" id="logo">
+
+    <div class="header">
+        <div class="menu-container">
+            <a href="https://google.com" id="logo">
                 <img src="images/elevation-logo.png">
             </a>
             <ul class="menu">
-                <li><a class="menu-item" href="#"
-                       id="content-catalog">
-                    Content Catalog
-                    <span>
-                        <img src="images/down-arrow.PNG">
-                    </span>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-menu-item" href="#">Data</a></li>
-                        <li><a class="dropdown-menu-item" href="#">R&D</a></li>
-                        <li><a class="dropdown-menu-item" href="#">Digital Marketing</a></li>
-                        <li><a class="dropdown-menu-item" href="#">Talent</a></li>
+                <li class="menu-item" id="content-catalog">
+                    <a href="https://google.com">
+                        Content Catalog
+                        <span>
+                            <img src="images/down-arrow.PNG">
+                        </span>
+                    </a>
+                    <ul class="submenu" id="content-catalog-submenu">
+                        <li class="dropdown-menu-item">
+                            <a href="https://google.com">
+                                Data
+                            </a>
+                        </li>
+                        <li class="dropdown-menu-item">
+                            <a href="https://google.com">
+                                R&D
+                            </a>
+                        </li>
+                        <li class="dropdown-menu-item">
+                            <a href="https://google.com">
+                                Digital Marketing
+                            </a>
+                        </li>
+                        <li class="dropdown-menu-item">
+                            <a href="https://google.com">
+                                Talent
+                            </a>
+                        </li>
                     </ul>
-                </a></li>
-                <li><a class="menu-item" href="#"
-                       id="our-solutions">
-                    Our Solutions
-                    <span>
-                        <img src="images/down-arrow.PNG">
-                    </span>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-menu-item" href="#">Employees Training</a></li>
-                        <li><a class="dropdown-menu-item" href="#">Train To Hire</a></li>
-                        <li><a class="dropdown-menu-item" href="#">ESG / Impact</a></li>
+                </li>
+                <li class="menu-item" id="our-solutions">
+                    <a href="https://google.com">
+                        Our Solutions
+                        <span>
+                            <img src="images/down-arrow.PNG">
+                        </span>
+                    </a>
+                    <ul class="submenu" id="our-solutions-submenu">
+                        <li class="dropdown-menu-item">
+                            <a href="https://google.com">
+                                Employees Training
+                            </a>
+                        </li>
+                        <li class="dropdown-menu-item">
+                            <a href="https://google.com">
+                                Train To Hire
+                            </a>
+                        </li>
+                        <li class="dropdown-menu-item">
+                            <a href="https://google.com">
+                                ESG / Impact
+                            </a>
+                        </li>
                     </ul>
-                </a></li>
-                <li><a class="menu-item" href="#"
-                       id="about">
-                    About
-                </a></li>
-                <li><a class="menu-item" href="#"
-                       id="blog">
-                    Blog
-                </a></li>
-                <li><a class="menu-item" href="#"
-                       id="hiring-partners">
-                    Hiring Partners
-                </a></li>
-                <li><a class="menu-item" href="#"
-                       id="join-elevation">
-                    Join Elevation
-                </a></li>
-                <li><a class="menu-item" href="#"
-                       id="languages">
-                    <img src="images/british-flag.png">
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-menu-item" href="#">
-                            <img src="images/british-flag.png">
-                            English</a></li>
-                        <li><a class="dropdown-menu-item" href="#">
-                            <img src="images/israel-flag.png">
-                            Hebrew</a></li>
-                        <li><a class="dropdown-menu-item" href="#">
-                            <img src="images/german-flag.png">
-                            Deutsch</a></li>
+                </li>
+                <li class="menu-item" id="about">
+                    <a href="https://google.com">
+                        About
+                    </a>
+                </li>
+                <li class="menu-item" id="blog">
+                    <a href="https://google.com">
+                        Blog
+                    </a>
+                </li>
+                <li class="menu-item" id="hiring-partners">
+                    <a href="https://google.com">
+                        Hiring Partners
+                    </a>
+                </li>
+                <li class="menu-item" id="join-elevation">
+                    <a href="https://google.com">
+                        Join Elevation
+                    </a>
+                </li>
+                <li class="menu-item" id="languages">
+                    <a href="https://google.com">
+                        <img src="images/british-flag.png">
+                    </a>
+                    <ul class="submenu">
+                        <li class="dropdown-menu-item" id="eng-language">
+                            <a class="dropdown-menu-item" href="#">
+                                <img src="images/british-flag.png">
+                                English
+                            </a>
+                        </li>
+                        <li class="dropdown-menu-item" id="heb-language">
+                            <a class="dropdown-menu-item" href="#">
+                                <img src="images/israel-flag.png">
+                                Hebrew</a>
+                        </li>
+                        <li class="dropdown-menu-item" id="de-language">
+                            <a class="dropdown-menu-item" href="#">
+                                <img src="images/german-flag.png">
+                                Deutsch
+                            </a>
+                        </li>
                     </ul>
-                </a></li>
+                </li>
             </ul>
         </div>
     </div>
 
     <div class="space"></div>
 
-    <div id="section-1">
-        <div id="swap-container">
+    <div class="section-1">
+        <div class="section-1-content-container">
             <div id="static-part">
-                <h1 id="academy">Your Academy As a Service</h1>
-                <h5 id="solve">Solve your talent shortage with customized end-to-end academy</h5>
-                <button id="talkBtn">Let's Talk</button>
+                <h1>Your Academy As a Service</h1>
+                <h5>Solve your talent shortage with customized end-to-end academy</h5>
+                <button class="button" id="lets-talk-btn">
+                    <a href="http://google.com">
+                        Let's Talk
+                    </a>
+                </button>
             </div>
-            <div id="swap-part">
+            <div id="carousel-part">
                 <div class="slide">
                     <div class="quote">
                         “...Our employees were super satisfied & engaged in the workshops with high eNPS scores. As a
@@ -94,8 +147,8 @@
                         <div class="person-image">
                             <img src="images/tali-bahar.jpeg">
                         </div>
-                        <div class="person-name">
-                            <p>Tali Bahar</p>
+                        <div class="person-info">
+                            <h3>Tali Bahar</h3>
                             Manager People & Culture CoE CZ, SK & HU, Philip Morris International
                         </div>
                     </div>
@@ -104,11 +157,9 @@
         </div>
     </div>
 
-    <div class="space"></div>
-
-    <div id="partners-and-customers">
-        <h1 id="partners">Partners & Customers</h1>
-        <div id="label-row-1">
+    <div class="partners-and-customers">
+        <h1>Partners & Customers</h1>
+        <div class="labels-row-1">
             <div id="google">
                 <img src="images/google-label.png">
             </div>
@@ -137,7 +188,7 @@
                 <img src="images/mazars-label.png">
             </div>
         </div>
-        <div id="label-row-2">
+        <div class="labels-row-2">
             <div id="novartis">
                 <img src="images/novartis-label.png">
             </div>
@@ -166,7 +217,7 @@
                 <img src="images/iia-label.png">
             </div>
         </div>
-        <div id="label-row-3">
+        <div class="labels-row-3">
             <div id="tasc">
                 <img src="images/tasc-label.png">
             </div>
@@ -197,11 +248,9 @@
         </div>
     </div>
 
-    <div class="space"></div>
-
     <div id="section-2">
-        <div id="video-container">
-            <div id="video">
+        <div class="video-container">
+            <div class="video">
                 <iframe frameborder="0"
                         height="420"
                         src="https://www.youtube.com/embed/aEIR5ou0GJc?controls=0&rel=0&playsinline=0&modestbranding=0&autoplay=0&enablejsapi=1&origin=https%3A%2F%2Felevation.ac&widgetid=1"
@@ -209,18 +258,18 @@
                 </iframe>
             </div>
         </div>
-        <div id="information-section">
-            <div id="enhance">
+        <div class="information-section">
+            <div class="information-section-header">
                 <h1>Enhance your talent & support organizational goals</h1>
                 <h3>with Customized end-to-end academy</h3>
             </div>
         </div>
-        <div id="carousel-container">
-            <div class="carousel-section" id="c-s-1">
-                <div class="c-s-img">
+        <div class="carousel-container">
+            <div class="carousel-section" id="carousel-section-1">
+                <div class="carousel-section-img">
                     <img src="images/sales-img.PNG">
                 </div>
-                <div class="c-s-text">
+                <div class="carousel-section-text">
                     <h1>Sales</h1>
                     <h4>SDR • BDR • Sales Rep • AE</h4><br>
                     Customer Journey • CS basics • Post sale customer lifecycle • Sale process • Discovery call • Demo
@@ -228,10 +277,10 @@
                 </div>
             </div>
             <div class="carousel-section" id="c-s-2">
-                <div class="c-s-img">
+                <div class="carousel-section-img">
                     <img src="images/customer-img.PNG">
                 </div>
-                <div class="c-s-text">
+                <div class="carousel-section-text">
                     <h1>Customer Success</h1>
                     <h4>CSM</h4><br>
                     Customer Journey • CS Supporting Tools • Manage & Analyze Customer Data • Relationship Management •
@@ -239,10 +288,10 @@
                 </div>
             </div>
             <div class="carousel-section" id="c-s-3">
-                <div class="c-s-img">
+                <div class="carousel-section-img">
                     <img src="images/dmarketing-img.PNG">
                 </div>
-                <div class="c-s-text">
+                <div class="carousel-section-text">
                     <h1>Digital Marketing</h1>
                     <h4>Marketing Manager • PPC Manager • SEM Manager • SEO Manager • Community Manager</h4><br>
                     Marketing Channels • Facebook & Instagram Ads • Market Research • Target Audience & User Persona
@@ -250,26 +299,23 @@
                 </div>
             </div>
         </div>
-        <br>
-        <br>
-        <br>
-        <div id="btn-section">
-            <button class="btn" id="view-data-catalog">
+        <div class="button-section">
+            <button class="button" id="view-data-catalog">
                 <a href="https://google.com">
                     View Data Catalog
                 </a>
             </button>
-            <button class="btn" id="view-rd-catalog">
+            <button class="button" id="view-rd-catalog">
                 <a href="https://google.com">
                     View R&D Catalog
                 </a>
             </button>
-            <button class="btn" id="view-dmarketing-catalog">
+            <button class="button" id="view-dmarketing-catalog">
                 <a href="https://google.com">
                     View Digital Marketing Catalog
                 </a>
             </button>
-            <button class="btn" id="view-talent-catalog">
+            <button class="button" id="view-talent-catalog">
                 <a href="https://google.com">
                     View Talent Catalog
                 </a>
@@ -279,60 +325,69 @@
 
     <div class="space"></div>
 
-    <div id="section-3">
-        <div id="progress-tree">
+    <div class="section-3">
+        <div class="progress-tree-container">
             <img src="images/container.png">
         </div>
-        <div id="contact-us-section">
-            <div class="contact-us-text">
+        <div class="hr-ld-section">
+            <img src="images/1508411165661.jpg">
+            <div class="hr-ld-section-text">
                 <h2>Digital HR and L&D Leaders</h2>
                 Uncover your best training solution
             </div>
-            <br>
-            <div class="contact-us-btn">
-                <button class="btn" id="contact-us">
+            <div class="hr-ld-section-button">
+                <button class="button" id="contact-us">
                     <a href="https://google.com">
                         Contact Us
                     </a>
                 </button>
             </div>
         </div>
-        <div id="resources-events">
-            <div id="r-e-text">
-                <h2>Resources & Events<span>.</span></h2>
-                <h3>Previous Events</h3>
+    <div id="resources-events">
+        <div id="r-e-text">
+            <h2>Resources & Events<span>.</span></h2>
+            <h3>Previous Events</h3>
+        </div>
+        <div id="r-e-img">
+            <div id="r-e-img1">
+                <button class="webinar-summary-btn">Webinar Summary</button>
             </div>
-            <div id="r-e-img">
-                <div id="r-e-img1">
-                    <button class="webinar-summary-btn">Webinar Summary</button>
-                </div>
-                <div class="webinar-summary-text">
-                    <h3>Webinar Summary: The Top 3 L&D Trends For 2023 And Why We Need To Start Implementing Them
-                        Today</h3>
-                    <div>
-                        <h3 class="reed-more">Reed More >></h3>
-                    </div>
-                </div>
-                <div id="r-e-img2">
-                    <button class="webinar-summary-btn">Webinar Summary</button>
-                </div>
-                <div class="webinar-summary-text">
-                    <h3>Webinar Summary: How Elevation Established The Ultimate Academy for Recruiting And Hiring
-                        Talents</h3>
-                    <div>
-                        <h3 class="reed-more">Reed More >></h3>
-                    </div>
-                </div>
-                <div id="r-e-img3">
-                    <button class="webinar-summary-btn">Webinar Summary</button>
-                </div>
-                <div class="webinar-summary-text">
-                    <h3>Webinar Summary: Guidelines For Developing Your own Critical Thinking Skill</h3>
-                    <div>
-                        <h3 class="reed-more">Reed More >></h3>
-                    </div>
+            <div class="webinar-summary-text">
+                <h3>Webinar Summary: The Top 3 L&D Trends For 2023 And Why We Need To Start Implementing Them
+                    Today</h3>
+                <div>
+                    <h3 class="reed-more">Reed More >></h3>
                 </div>
             </div>
+            <div id="r-e-img2">
+                <button class="webinar-summary-btn">Webinar Summary</button>
+            </div>
+            <div class="webinar-summary-text">
+                <h3>Webinar Summary: How Elevation Established The Ultimate Academy for Recruiting And Hiring
+                    Talents</h3>
+                <div>
+                    <h3 class="reed-more">Reed More >></h3>
+                </div>
+            </div>
+            <div id="r-e-img3">
+                <button class="webinar-summary-btn">Webinar Summary</button>
+            </div>
+            <div class="webinar-summary-text">
+                <h3>Webinar Summary: Guidelines For Developing Your own Critical Thinking Skill</h3>
+                <div>
+                    <h3 class="reed-more">Reed More >></h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <div id="section-4">
+        <div id="reviews"></div>
+        <div id="upcoming-running-programs">Upcoming & Running Programs
+            <div id="program-1"></div>
+            <div id="program-2"></div>
+            <div id="program-3"></div>
         </div>
     </div>
 </body>

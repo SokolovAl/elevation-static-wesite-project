@@ -1,0 +1,264 @@
+.section-1 {
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    grid-template-areas: ". sc .";
+    height: 400px;
+}
+
+.section-1-content-container {
+    grid-area: sc;
+    display: grid;
+    grid-template-areas: "st sw";
+    position: relative;
+}
+
+#static-part {
+    grid-area: st;
+    padding: 30px;
+}
+
+#static-part h1 {
+    font-size: 60px;
+    margin: 0;
+}
+
+#static-part h5 {
+    font-size: 25px;
+}
+
+#lets-talk-btn {
+    background-color: #fc94a8;
+    border: none;
+    width: 150px;
+    height: 50px;
+    border-radius: 50px;
+    color: white;
+    padding: 10px;
+}
+
+#lets-talk-btn:hover {
+    background-color: #ffbdc9;
+}
+
+#carousel-part {
+    grid-area: sw;
+    background-color: #fdf6f8;
+}
+
+.slide {
+    display: grid;
+    grid-template-areas:
+            "quote"
+            "person";
+}
+
+.quote {
+    grid-area: quote;
+    padding: 30px;
+    letter-spacing: 1.5px;
+    line-height: 2em;
+    margin-bottom: 50px;
+}
+
+.person {
+    grid-area: person;
+    margin-left: 30px;
+    display: grid;
+    grid-template-areas: "pimg pinfo";
+}
+
+.person-image {
+    grid-area: pimg;
+    padding: 10px;
+}
+
+.person-info {
+    grid-area: pinfo;
+    padding: 15px;
+    font-weight: normal;
+}
+
+.person img {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.person-info h3 {
+    font-weight: bold;
+    margin: 0;
+}
+
+.partners-and-customers {
+    margin-top: 75px;
+    margin-bottom: 75px;
+    text-align: center;
+    padding: 35px;
+    font-size: 10px;
+    display: grid;
+    grid-template-rows: repeat(4, auto);
+    grid-template-columns: repeat(5, auto);
+    grid-template-areas:
+            ". . prt . ."
+            ". . lr1 . ."
+            ". . lr2 . ."
+            ". . lr3 . .";
+}
+
+.partners-and-customers h1 {
+    grid-area: prt;
+}
+
+.labels-row-1 {
+    grid-area: lr1;
+    display: grid;
+    overflow: hidden;
+    grid-template-columns: 20% repeat(9, auto) 20%;
+    grid-template-areas:
+            ". google wix monday facebook aws verbit auto1 apx mazars .";
+}
+
+.labels-row-1 img {
+    width: 75px;
+    height: 75px;
+    object-fit: contain;
+}
+
+#google {
+    grid-area: google;
+}
+
+#wix {
+    grid-area: wix;
+}
+
+#monday {
+    grid-area: monday;
+}
+
+#facebook {
+    grid-area: facebook;
+}
+
+#aws {
+    grid-area: aws;
+}
+
+#verbit {
+    grid-area: verbit;
+}
+
+#auto1 {
+    grid-area: auto1;
+}
+
+#apx {
+    grid-area: apx;
+}
+
+#mazars {
+    grid-area: mazars;
+}
+
+.labels-row-2 {
+    grid-area: lr2;
+    display: grid;
+    overflow: hidden;
+    grid-template-columns: 20% repeat(9, auto) 20%;
+    grid-template-areas:
+            ". novartis merck ey marley-spoon hello-fresh basf jpmorgan bezeq iia .";
+}
+
+.labels-row-2 img {
+    width: 75px;
+    height: 75px;
+    object-fit: contain;
+}
+
+#novartis {
+    grid-area: novartis;
+}
+
+#merck {
+    grid-area: merck;
+}
+
+#ey {
+    grid-area: ey;
+}
+
+#marley-spoon {
+    grid-area: marley-spoon;
+}
+
+#hello-fresh {
+    grid-area: hello-fresh;
+}
+
+#basf {
+    grid-area: basf;
+}
+
+#jpmorgan {
+    grid-area: jpmorgan;
+}
+
+#bezeq {
+    grid-area: bezeq;
+}
+
+#iia {
+    grid-area: iia;
+}
+
+.labels-row-3 {
+    grid-area: lr3;
+    display: grid;
+    overflow: hidden;
+    grid-template-columns: 20% repeat(9, auto) 20%;
+    grid-template-areas:
+            ". tasc saatchi ness joint leumi hapoalim macabi israel uae .";
+}
+
+.labels-row-3 img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+#tasc {
+    grid-area: tasc;
+}
+
+#saatchi {
+    grid-area: saatchi;
+}
+
+#ness {
+    grid-area: ness;
+}
+
+#joint {
+    grid-area: joint;
+}
+
+#leumi {
+    grid-area: leumi;
+}
+
+#hapoalim {
+    grid-area: hapoalim;
+}
+
+#macabi {
+    grid-area: macabi;
+}
+
+#israel {
+    grid-area: israel;
+}
+
+#uae {
+    grid-area: uae;
+}
