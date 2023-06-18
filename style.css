@@ -517,10 +517,30 @@ body {
 
 #progress-tree {
     grid-area: pt;
+    overflow: hidden;
 }
 
 #contact-us-section {
     grid-area: cus;
+    background-image: url("images/1508411165661.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    height: 200px;
+    margin-top: 25px;
+}
+
+.contact-us-text {
+    font-size: 20px;
+    text-align: center;
+    font-family: "Montserrat", Sans-serif;
+    font-weight: bold;
+    color: #0f213a;
+}
+
+#contact-us {
+    background-color: #fc94a8;
+    align-items: center;
 }
 
 #resources-events {
@@ -543,30 +563,63 @@ body {
 #resources-events h3 {
     font-size: 25px;
     font-weight: bold;
+}
+
+#r-e-text {
     color: #fc94a8;
 }
 
 #r-e-img {
     display: grid;
+    grid-gap: 10px;
     grid-template-columns: repeat(3, auto);
     grid-template-areas: "re1 re2 re3";
-    height: 300px;
+    height: 500px;
 }
 
 #r-e-img1 {
     grid-area: re1;
-    max-height: 165px;
-    overflow: hidden;
+    background-image: url("images/1.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: left;
+    padding-top: 15px;
+    padding-left: 15px;
 }
 
 #r-e-img2 {
     grid-area: re2;
-    max-height: 165px;
-    overflow: hidden;
+    background-image: url("images/2.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: left;
+    padding-top: 15px;
+    padding-left: 15px;
 }
 
 #r-e-img3 {
     grid-area: re3;
-    max-height: 165px;
-    overflow: hidden;
+    background-image: url("images/3.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: left;
+    padding-top: 15px;
+    padding-left: 15px;
+}
+
+.webinar-summary-btn {
+    vertical-align: top;
+    background-color: #fc94a8;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    height: 30px;
+}
+
+.webinar-summary-text {
+    text-align: left;
+}
+
+.reed-more {
+    color: #fc94a8;
 }
