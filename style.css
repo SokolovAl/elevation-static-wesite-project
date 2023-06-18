@@ -1,6 +1,5 @@
 html,
 body {
-    background-color: #f3f7fb;
     margin: 0;
     padding: 0;
 }
@@ -386,6 +385,10 @@ body {
     grid-area: uae;
 }
 
+#section-2 {
+    background-color: #f3f7fb;
+}
+
 #video-container {
     background-color: #0f2441;
     display: grid;
@@ -462,6 +465,7 @@ body {
 #btn-section {
     display: grid;
     grid-gap: 10px;
+    height: 100px;
     grid-template-columns: 20% repeat(4, auto) 20%;
     grid-template-areas: ". vdc vrdc vdmc vtc .";
 }
@@ -499,4 +503,46 @@ body {
 .btn a {
     text-decoration: none;
     color: white;
+}
+
+#section-3 {
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas:
+            ". pt ."
+            ". cus ."
+            ". re .";
+}
+
+#progress-tree {
+    grid-area: pt;
+}
+
+#contact-us-section {
+    grid-area: cus;
+}
+
+#resources-events {
+    grid-area: re;
+}
+
+#r-e-img {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-areas: "re1 re2 re3";
+    height: 175px;
+}
+
+#r-e-img1 {
+    grid-area: re1;
+
+}
+
+#r-e-img2 {
+    grid-area: re2;
+}
+
+#r-e-img3 {
+    grid-area: re3;
 }
