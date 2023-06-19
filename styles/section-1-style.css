@@ -30,7 +30,6 @@
     grid-template-columns: repeat(7, auto);
     grid-template-areas: "cc os ab bl je hp la";
     list-style: none;
-    font-family: Montserrat, Sans-serif;
     font-size: 17px;
     font-weight: 500;
     line-height: 1em;
@@ -226,6 +225,7 @@
 
 .partners-and-customers h1 {
     grid-area: prt;
+    font-size: 45px;
 }
 
 .labels-row-1 {
