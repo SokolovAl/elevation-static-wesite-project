@@ -42,15 +42,10 @@
     text-decoration: none;
 }
 
-#content-catalog:hover .submenu {
-    display: block;
-}
-
-#our-solutions:hover .submenu {
-    display: block;
-}
-
-#languages:hover .submenu {
+#content-catalog:hover .submenu,
+#our-solutions:hover .submenu,
+#languages:hover .submenu,
+.submenu:hover {
     display: block;
 }
 
@@ -124,6 +119,7 @@
 .section-1-content-container {
     grid-area: sc;
     display: grid;
+    grid-template-columns: repeat(2, 50%);
     grid-template-areas: "st sw";
     position: relative;
 }
@@ -141,6 +137,7 @@
 
 #static-part h5 {
     font-size: 25px;
+    font-weight: normal;
 }
 
 #lets-talk-btn {
@@ -225,7 +222,11 @@
 
 .partners-and-customers h1 {
     grid-area: prt;
-    font-size: 45px;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+    color: #0f2441;
 }
 
 .labels-row-1 {
