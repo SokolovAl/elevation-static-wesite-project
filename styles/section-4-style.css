@@ -1,0 +1,149 @@
+#section-4 {
+    display: grid;
+    width: 100%;
+    grid-template-rows: repeat(2, auto);
+    grid-template-areas:
+            "rs"
+            "ps";
+}
+
+.reviews-section {
+    grid-area: rs;
+    background-color: #fdf6f8;
+    display: grid;
+    padding-bottom: 50px;
+    margin-bottom: 50px;
+    grid-template-columns: 20% 60% 20%;
+    grid-template-rows: repeat(2, auto);
+    grid-template-areas:
+            ". review ."
+            ". reviewer .";
+}
+
+.review {
+    grid-area: review;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 30px;
+    background-color: white;
+    font-weight: normal;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 0 0 5px rgba(143, 143, 143, 0.1),
+    0 0 5px rgba(143, 143, 143, 0.1) inset,
+    0 5px 5px rgba(143, 143, 143, 0.1),
+    0 -5px 5px rgba(143, 143, 143, 0.1);
+}
+
+.reviewer {
+    grid-area: reviewer;
+    display: grid;
+    grid-template-areas: "rimg rinfo";
+}
+
+.reviewer img {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.reviewer-image {
+    display: flex;
+    margin: 15px;
+    grid-area: rimg;
+    justify-content: right;
+}
+
+.reviewer-info {
+    grid-area: rinfo;
+    font-weight: normal;
+}
+
+.reviewer-info h3 {
+    margin-top: 30px;
+    margin-bottom: 0;
+}
+
+.programs-section {
+    grid-area: ps;
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    grid-template-areas:
+            ". psh ."
+            ". pcc .";
+}
+
+.programs-section-header {
+    grid-area: psh;
+    text-align: center;
+    font-size: 50px;
+    letter-spacing: 0.3px;
+    margin-bottom: 50px;
+}
+
+.programs-card-container {
+    grid-area: pcc;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(3, auto);
+    grid-template-areas: "p1 p2 p3";
+    height: 350px;
+}
+
+.program {
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    text-align: left;
+    background-color: #f3f7fb;
+    padding: 30px;
+}
+
+.program img {
+    height: 30%;
+    max-width: 50%;
+    object-fit: contain;
+}
+
+#program-1 {
+    grid-area: p1;
+}
+
+#program-2 {
+    grid-area: p2;
+}
+
+#program-3 {
+    grid-area: p3;
+}
+
+.program-text {
+    height: 115px;
+    margin-bottom: 4em;
+}
+
+.program-text p {
+    font-family: "Assistant", Sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.2em;
+    letter-spacing: 0.5px;
+}
+
+.learn-more {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: #f3f7fb;
+}
+
+
+.learn-more a {
+    vertical-align: top;
+    color: #fc94a8;
+    text-decoration: underline #fc94a8;
+    line-height: 1.2em;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
