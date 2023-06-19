@@ -1,4 +1,4 @@
-#section-2 {
+.section-2 {
     background-color: #f3f7fb;
 }
 
@@ -19,6 +19,7 @@
 
 .information-section {
     display: grid;
+    margin-top: 35px;
     grid-template-columns: 30% 40% 30%;
     grid-template-areas: ". eh .";
 }
@@ -26,7 +27,6 @@
 .information-section-header {
     grid-area: eh;
     text-align: center;
-    font-family: "Montserrat", Sans-serif;
     font-weight: bold;
 }
 
@@ -70,11 +70,11 @@
     text-align: center;
 }
 
-.carousel-section-img {
+.carousel-section-image {
     max-height: 65px;
 }
 
-.carousel-section-img img {
+.carousel-section-image img {
     padding-top: 10px;
     object-fit: cover;
 }
