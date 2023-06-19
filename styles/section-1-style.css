@@ -73,7 +73,6 @@
 
 .dropdown-menu-item {
     color: #fc94a8;
-    font-family: Montserrat, Sans-serif;
     font-size: 16px;
     font-weight: 500;
     line-height: 1em;
@@ -117,7 +116,7 @@
 
 .section-1 {
     display: grid;
-    grid-template-columns: 20% 60% 20%;
+    grid-template-columns: 15% 70% 15%;
     grid-template-areas: ". sc .";
     height: 400px;
 }
@@ -136,6 +135,7 @@
 
 #static-part h1 {
     font-size: 60px;
+    font-weight: bolder;
     margin: 0;
 }
 
@@ -232,7 +232,7 @@
     grid-area: lr1;
     display: grid;
     overflow: hidden;
-    grid-template-columns: 20% repeat(9, auto) 20%;
+    grid-template-columns: 15% repeat(9, auto) 15%;
     grid-template-areas:
             ". google wix monday facebook aws verbit auto1 apx mazars .";
 }
@@ -283,7 +283,7 @@
     grid-area: lr2;
     display: grid;
     overflow: hidden;
-    grid-template-columns: 20% repeat(9, auto) 20%;
+    grid-template-columns: 15% repeat(9, auto) 15%;
     grid-template-areas:
             ". novartis merck ey marley-spoon hello-fresh basf jpmorgan bezeq iia .";
 }
@@ -334,7 +334,7 @@
     grid-area: lr3;
     display: grid;
     overflow: hidden;
-    grid-template-columns: 20% repeat(9, auto) 20%;
+    grid-template-columns: 15% repeat(9, auto) 15%;
     grid-template-areas:
             ". tasc saatchi ness joint leumi hapoalim macabi israel uae .";
 }
