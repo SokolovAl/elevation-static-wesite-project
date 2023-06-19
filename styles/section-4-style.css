@@ -147,3 +147,27 @@
     font-weight: 600;
     letter-spacing: 0.5px;
 }
+
+.footer {
+    display: grid;
+    grid-template-rows: 20% repeat(2, auto) 20%;
+    grid-template-areas: ". cr ub .";
+    height: auto;
+}
+
+.copyright {
+    grid-area: cr;
+    height: 100%;
+    font-weight: 200;
+}
+
+.up-button {
+    display: flex;
+    grid-area: ub;
+    height: 100%;
+    justify-content: end;
+}
+
+.up-button img:hover {
+    transform: scale(1.05);
+}
