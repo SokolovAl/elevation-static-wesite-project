@@ -42,6 +42,10 @@
     text-decoration: none;
 }
 
+.menu-item a:hover {
+    color: #ff718d;
+}
+
 .transparent-helper {
     position: absolute;
     height:35px;
